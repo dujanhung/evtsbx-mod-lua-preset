@@ -21,16 +21,19 @@ end
 function vector_exp(a,n)
  return {a[1]^n,a[2]^n,a[3]^n}
 
+function vector_exp2(a)
+ return vector_exp(a,2)
+
 function vector_mixdown(a)
  return a[1]+a[2]+a[3]
 end
 
 function vector_length(a)
- return math.sqrt(vector_mixdown(vector_exp(a,2)))
+ return math.sqrt(vector_mixdown(vector_exp2(a)))
 end
 
 function vector_distance(a,b)
- return math.sqrt(vector_mixdown(vector_exp(vector_subtract(a,b),2)))
+ return math.sqrt(vector_mixdown(vector_exp2(vector_subtract(a,b))))
 end
 
 function vector_dot(a,b)
