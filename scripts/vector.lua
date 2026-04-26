@@ -6,6 +6,10 @@ function vector_subtract(a,b)
  return {a[1]-b[1],a[2]-b[2],a[3]-b[3]}
 end
 
+function vector_multiply(a,b)
+ return {a[1]*b[1],a[2]*b[2],a[3]*b[3]}
+end
+
 function vector_scale(a,n)
  return {a[1]*n,a[2]*n,a[3]*n}
 end
@@ -22,7 +26,7 @@ function vector_distance(a,b)
 end
 
 function vector_dot(a,b)
- return a[1]*b[1]+a[2]*b[2]+a[3]*b[3]
+ return vector_mixdown(vector_multiply(a,b))
 end
 
 function Normalised(a) local l = math.sqrt(a[1]^2 + a[2]^2 + a[3]^2) return {a[1]/l, a[2]/l, a[3]/l} end
