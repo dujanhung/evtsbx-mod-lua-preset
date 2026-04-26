@@ -1,7 +1,7 @@
 function vector_add(a,b)
  local output={}
  for i=1,#a do
-  output[i]=a[i]+b[i]
+  table.insert(output,a[i]+b[i])
  end
  return output
 end
