@@ -1,8 +1,8 @@
 function vector_safeguard(a,b)
- if type(a)!="table" then
+ if type(a)!="table"then
   return false
  end
- if type(b)!="table" then
+ if type(b)!="table"then
   return false
  if #a!=#b then
   return false
