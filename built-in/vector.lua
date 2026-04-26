@@ -51,7 +51,10 @@ function vector_exp(a,n)
 end
 
 function vector_exp2(a)
- return vector_exp(a,2)
+ return vector_exp(
+  a,
+  2
+ )
 end
 
 function vector_mixdown(a)
