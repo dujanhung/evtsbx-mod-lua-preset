@@ -1,10 +1,12 @@
-function AddVectors(a, b)
+function AddVectors(a,b)
  return {a[1]+b[1],a[2]+b[2],a[3]+b[3]}
 end
-function SubtractVectors(a, b)
+function SubtractVectors(a,b)
  return {a[1]-b[1],a[2]-b[2],a[3]-b[3]}
 end
-function ScaleVector(a, n) return {a[1]*n, a[2]*n, a[3]*n} end
+function ScaleVector(a,n)
+ return {a[1]*n,a[2]*n,a[3]*n}
+end
 function DistanceBetweenPoints(a, b) return math.sqrt((a[1]-b[1])^2+(a[2]-b[2])^2+(a[3]-b[3])^2) end
 function Dot(a, b) return a[1]*b[1] + a[2]*b[2] + a[3]*b[3] end
 function Normalised(a) local l = math.sqrt(a[1]^2 + a[2]^2 + a[3]^2) return {a[1]/l, a[2]/l, a[3]/l} end
