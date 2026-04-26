@@ -2,7 +2,7 @@
 
 required decencies:
 
-evtsbx-mod-lua-lib/built-in/shortcut.lua
+https://dujanhung.github.com/evtsbx-mod-lua-lib/blob/built-in/shortcut.lua
 evtsbx-mod-lua-lib/built-in/vector.lua
 
 */
