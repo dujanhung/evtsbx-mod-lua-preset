@@ -14,21 +14,21 @@ function extra_math_is_zero_approx(value)
  return false
 end
 
-function extra_math_sign_int(a)
- if a==0 then
+function extra_math_sign_int(value)
+ if value==0 then
   return 0
  end
- if a>0 then
+ if value>0 then
   return 1
  end
  return -1
 end
 
-function extra_math_sign_float(a)
- if extra_math_is_zero_approx(a) then
+function extra_math_sign_float(value)
+ if extra_math_is_zero_approx(value) then
   return 0.0
  end
- if a>0.0 then
+ if value>0.0 then
   return 1.0
  end
  return -1.0
