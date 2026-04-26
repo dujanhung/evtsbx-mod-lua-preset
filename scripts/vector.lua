@@ -42,5 +42,6 @@ function vector_normalize(a)
 end
 
 function vector_projection(a,b)
- return vector_scale(vector_normalized(b),vector_dot(a,d))
+ local o=vector_normalized(b)
+ return vector_scale(o,vector_dot(a,o))
 end
