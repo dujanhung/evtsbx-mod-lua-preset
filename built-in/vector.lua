@@ -1,3 +1,5 @@
+module("vector")
+
 function vector_safeguard(a,b)
  if type(a)!="table"then
   return false
