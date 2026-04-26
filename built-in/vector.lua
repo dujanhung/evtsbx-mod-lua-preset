@@ -1,6 +1,10 @@
 function vector_safeguard(a,b)
  if #a!=#b then
   return false
+ end
+ if type(a)!="table" then
+  return false
+ end
  return true
 end
 
