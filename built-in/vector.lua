@@ -30,9 +30,9 @@ function vector_divide(a,b)
  }
 end
 
-function vector_inverse(a)
+function vector_inverse(o)
  return vector_scale(
-  a,
+  o,
   -1
  )
 end
@@ -53,22 +53,22 @@ function vector_exp(a,n)
  }
 end
 
-function vector_exp2(a)
+function vector_exp2(o)
  return vector_exp(
-  a,
+  o,
   2
  )
 end
 
-function vector_mixdown(a)
- return a[1]+a[2]+a[3]
+function vector_mixdown(o)
+ return o[1]+o[2]+o[3]
 end
 
-function vector_length(a)
+function vector_length(o)
  return math.sqrt(
   vector_mixdown(
    vector_exp2(
-    a
+    o
    )
   )
  )
@@ -96,11 +96,11 @@ function vector_dot(a,b)
  )
 end
 
-function vector_normalize(a)
+function vector_normalize(o)
  return vector_divide(
-  a,
+  o,
   vector_length(
-   a
+   o
   )
  )
 end
