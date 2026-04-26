@@ -2,8 +2,8 @@
 
 required decencies:
 
-- shortcut.lua
-- vector.lua
+evtsbx-mod-lua-lib/built-in/shortcut.lua
+evtsbx-mod-lua-lib/built-in/vector.lua
 
 */
 
