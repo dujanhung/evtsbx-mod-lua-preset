@@ -10,7 +10,7 @@ function vector_scale(a,n)
  return {a[1]*n,a[2]*n,a[3]*n}
 end
 
-function vector_distance(a,b)
+function vector_length(a,b)
  return math.sqrt((a[1]-b[1])^2+(a[2]-b[2])^2+(a[3]-b[3])^2)
 end
 
