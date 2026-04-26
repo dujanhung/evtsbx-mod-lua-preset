@@ -1,8 +1,7 @@
-epsilon=1e9
-epsilon
+extra_math_epsilon=1e9
 
 function extra_math_is_zero(a)
- if a>-epsilon and a<epsilon:
+ if a>-extra_math_epsilon and a<extra_math_epsilon:
   return true
  end
  return false
