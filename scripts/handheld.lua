@@ -15,7 +15,7 @@ function fixedUpdate()
 end
 
 function handheld_tick()
- if!is_detached_from_ground then
+ if!is_detached_from_ground() then
   return
  if!rb.IsKinematic then
   rb.IsKinematic=true
