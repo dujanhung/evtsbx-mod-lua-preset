@@ -59,11 +59,24 @@ function vector_mixdown(a)
 end
 
 function vector_length(a)
- return math.sqrt(vector_mixdown(vector_exp2(a)))
+ return math.sqrt(
+  vector_mixdown(
+   vector_exp2(a)
+  )
+ )
 end
 
 function vector_distance(a,b)
- return math.sqrt(vector_mixdown(vector_exp2(vector_subtract(a,b))))
+ return math.sqrt(
+  vector_mixdown(
+   vector_exp2(
+    vector_subtract(
+     a,
+     b
+    )
+   )
+  )
+ )
 end
 
 function vector_dot(a,b)
