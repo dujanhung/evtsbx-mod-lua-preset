@@ -38,8 +38,7 @@ function vector_dot(a,b)
 end
 
 function vector_normalize(a)
- local l=math.sqrt(a[1]^2+a[2]^2+a[3]^2)
- return {a[1]/l, a[2]/l, a[3]/l}
+ return vector_divide(a,vector_length(a))
 end
 
 function Magnitude(a) return math.sqrt(a[1]^2+a[2]^2+a[3]^2) end
