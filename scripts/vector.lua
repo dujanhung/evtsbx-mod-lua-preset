@@ -11,7 +11,8 @@ function vector_scale(a,n)
 end
 
 function vector_distance(a,b)
- return math.sqrt((a[1]-b[1])^2+(a[2]-b[2])^2+(a[3]-b[3])^2)
+ local n=vector_subtract(a,b)^2
+ return math.sqrt(n[1]+n[2]+n[3])
 end
 
 function vector_dot(a,b)
