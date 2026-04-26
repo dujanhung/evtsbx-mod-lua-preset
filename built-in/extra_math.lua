@@ -1,6 +1,6 @@
 extra_math_epsilon=1e-9
 
-func extra_math_is_approx(value,target)
+function extra_math_is_approx(value,target)
  if value>=-target and value<=target then
   return true
  end
