@@ -2,6 +2,7 @@
 
 required decencies:
 
+Evertech Sandbox API
 evtsbx-mod-lua-lib/built-in/shortcut.lua
 evtsbx-mod-lua-lib/built-in/vector.lua
 
