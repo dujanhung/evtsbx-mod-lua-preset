@@ -20,9 +20,11 @@ end
 
 function vector_exp(a,n)
  return {a[1]^n,a[2]^n,a[3]^n}
+end
 
 function vector_exp2(a)
  return vector_exp(a,2)
+end
 
 function vector_mixdown(a)
  return a[1]+a[2]+a[3]
