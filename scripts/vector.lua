@@ -33,6 +33,10 @@ function vector_dot(a,b)
  return vector_mixdown(vector_multiply(a,b))
 end
 
-function Normalised(a) local l = math.sqrt(a[1]^2 + a[2]^2 + a[3]^2) return {a[1]/l, a[2]/l, a[3]/l} end
+function vector_normalize(a)
+ local l=math.sqrt(a[1]^2+a[2]^2+a[3]^2)
+ return {a[1]/l, a[2]/l, a[3]/l}
+end
+
 function Magnitude(a) return math.sqrt(a[1]^2+a[2]^2+a[3]^2) end
 function Projection(a, b) local d = Normalised(b) local l = Dot(a, d) return ScaleVector(d, l) end
