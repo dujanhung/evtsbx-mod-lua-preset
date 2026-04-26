@@ -18,8 +18,7 @@ function vector_mixdown(a)
 end
 
 function vector_distance(a,b)
- local o=vector_exp(vector_subtract(a,b),2)
- return math.sqrt(o[1]+o[2]+o[3])
+ return math.sqrt(vector_mixdown(vector_exp(vector_subtract(a,b),2)))
 end
 
 function vector_dot(a,b)
