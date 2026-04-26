@@ -1,4 +1,4 @@
-local distance_from_player=5.0
+distance_from_player=5.0
 
 function handheld_tick()
  if!rb.IsKinematic then
