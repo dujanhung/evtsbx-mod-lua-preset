@@ -13,7 +13,6 @@ function handheld_tick()
    tr.LocalRotation
   )
  )
- local f=
  rb.Rotation=b
  rb.Position=vector_subtract(
   vector_add(
