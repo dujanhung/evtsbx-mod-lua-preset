@@ -1,25 +1,49 @@
 function vector_add(a,b)
- return {a[1]+b[1],a[2]+b[2],a[3]+b[3]}
+ return {
+  a[1]+b[1],
+  a[2]+b[2],
+  a[3]+b[3]
+ }
 end
 
 function vector_subtract(a,b)
- return {a[1]-b[1],a[2]-b[2],a[3]-b[3]}
+ return {
+  a[1]-b[1],
+  a[2]-b[2],
+  a[3]-b[3]
+ }
 end
 
 function vector_multiply(a,b)
- return {a[1]*b[1],a[2]*b[2],a[3]*b[3]}
+ return {
+  a[1]*b[1],
+  a[2]*b[2],
+  a[3]*b[3]
+ }
 end
 
 function vector_divide(a,b)
- return {a[1]/b[1],a[2]/b[2],a[3]/b[3]}
+ return {
+  a[1]/b[1],
+  a[2]/b[2],
+  a[3]/b[3]
+ }
 end
 
 function vector_scale(a,n)
- return {a[1]*n,a[2]*n,a[3]*n}
+ return {
+  a[1]*n,
+  a[2]*n,
+  a[3]*n
+ }
 end
 
 function vector_exp(a,n)
- return {a[1]^n,a[2]^n,a[3]^n}
+ return {
+  a[1]^n,
+  a[2]^n,
+  a[3]^n
+ }
 end
 
 function vector_exp2(a)
