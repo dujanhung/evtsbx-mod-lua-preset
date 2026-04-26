@@ -1,11 +1,11 @@
-"""
+/*
 
 required decencies:
 
 - shortcut.lua
 - vector.lua
 
-"""
+*/
 
 handheld_distance=5.0
 
