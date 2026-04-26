@@ -1,6 +1,6 @@
 extra_math_epsilon=1e-9
 
-function extra_math_is_approx(value,target, artifact)
+function extra_math_is_approx(value,target,artifact)
  local o=value-target
  if o>=-artifact and o<=artifact then
   return true
