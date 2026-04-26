@@ -85,14 +85,32 @@ function vector_distance(a,b)
 end
 
 function vector_dot(a,b)
- return vector_mixdown(vector_multiply(a,b))
+ return vector_mixdown(
+  vector_multiply(
+   a,
+   b
+  )
+ )
 end
 
 function vector_normalize(a)
- return vector_divide(a,vector_length(a))
+ return vector_divide(
+  a,
+  vector_length(
+   a
+  )
+ )
 end
 
 function vector_projection(a,b)
- local o=vector_normalized(b)
- return vector_scale(o,vector_dot(a,o))
+ local o=vector_normalized(
+  b
+ )
+ return vector_scale(
+  o,
+  vector_dot(
+   a,
+   o
+  )
+ )
 end
