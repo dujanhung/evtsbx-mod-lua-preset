@@ -31,7 +31,10 @@ function vector_divide(a,b)
 end
 
 function vector_inverse(a)
- return vector_scale(a,-1)
+ return vector_scale(
+  a,
+  -1
+ )
 end
 
 function vector_scale(a,n)
