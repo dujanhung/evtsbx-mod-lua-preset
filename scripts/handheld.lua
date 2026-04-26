@@ -1,4 +1,4 @@
-function handheld_tick
+function handheld_tick()
  if!rb.IsKinematic then
   rb.IsKinematic=true
 	local dir=pl.CameraDirection
