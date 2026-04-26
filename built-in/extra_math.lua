@@ -1,7 +1,14 @@
 extra_math_epsilon=1e-9
 
-function extra_math_is_zero_approx(a)
- if a>=-extra_math_epsilon and a<=extra_math_epsilon then
+func extra_math_is_approx(value,target)
+ if value>=-target and value<=target then
+  return true
+ end
+ return false
+end
+
+function extra_math_is_zero_approx(value)
+ if extra_math_is_approx(value,extra_math_epsilon) then
   return true
  end
  return false
