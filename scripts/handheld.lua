@@ -8,5 +8,14 @@ function handheld_tick()
  local e=q.Multiply(b,q.Inverse(rb.Rotation))
  local f=q.MultiplyByVector(e,vector_subtract(mb.Position,rb.Position))
  rb.Rotation=b
- rb.Position=vector_subtract(vector_add(pl.CameraPosition,vector_scale(a,handheld_distance)),f)
+ rb.Position=vector_subtract(
+  vector_add(
+   pl.CameraPosition,
+   vector_scale(
+    a,
+    handheld_distance
+   )
+  ),
+  f
+ )
 end
