@@ -10,7 +10,7 @@ evtsbx-mod-lua-lib/built-in/vector.lua
 handheld_distance=5.0
 
 function handheld_tick()
- if!is_detached_from_ground:
+ if!is_detached_from_ground then
   return
  if!rb.IsKinematic then
   rb.IsKinematic=true
