@@ -25,6 +25,10 @@ function vector_mixdown(a)
  return a[1]+a[2]+a[3]
 end
 
+function vector_length(a)
+ return math.sqrt(vector_mixdown(vector_exp(a,2)))
+end
+
 function vector_distance(a,b)
  return math.sqrt(vector_mixdown(vector_exp(vector_subtract(a,b),2)))
 end
