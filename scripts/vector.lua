@@ -41,5 +41,6 @@ function vector_normalize(a)
  return vector_divide(a,vector_length(a))
 end
 
-function Magnitude(a) return math.sqrt(a[1]^2+a[2]^2+a[3]^2) end
-function Projection(a, b) local d = Normalised(b) local l = Dot(a, d) return ScaleVector(d, l) end
+function vector_projection(a,b)
+ return vector_scale(vector_normalized(b),vector_dot(a,d))
+end
