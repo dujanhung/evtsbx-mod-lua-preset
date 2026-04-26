@@ -1,4 +1,12 @@
+function vector_safeguard(a,b)
+ if #a!=#b then
+  return false
+ return true
+end
+
 function vector_add(a,b)
+ if!vector_safegruard(a,b) then
+  return
  local output={}
  for i=1,#a do
   table.insert(output,a[i]+b[i])
@@ -7,27 +15,33 @@ function vector_add(a,b)
 end
 
 function vector_subtract(a,b)
- return {
-  a[1]-b[1],
-  a[2]-b[2],
-  a[3]-b[3]
- }
+ if!vector_safegruard(a,b) then
+  return
+ local output={}
+ for i=1,#a do
+  table.insert(output,a[i]-b[i])
+ end
+ return output
 end
 
 function vector_multiply(a,b)
- return {
-  a[1]*b[1],
-  a[2]*b[2],
-  a[3]*b[3]
- }
+ if!vector_safegruard(a,b) then
+  return
+ local output={}
+ for i=1,#a do
+  table.insert(output,a[i]*b[i])
+ end
+ return output
 end
 
 function vector_divide(a,b)
- return {
-  a[1]/b[1],
-  a[2]/b[2],
-  a[3]/b[3]
- }
+ if!vector_safegruard(a,b) then
+  return
+ local output={}
+ for i=1,#a do
+  table.insert(output,a[i]/b[i])
+ end
+ return output
 end
 
 function vector_inverse(o)
