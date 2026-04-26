@@ -11,6 +11,9 @@ function vector_multiply(a,b)
 end
 
 function vector_divide(a,b)
+ if b[1]==0 or b[2]==0 or b[3]==0:
+  print("can't divide by zero")
+  return {0.1,0.1,0.1}
  return {a[1]/b[1],a[2]/b[2],a[3]/b[3]}
 end
 
