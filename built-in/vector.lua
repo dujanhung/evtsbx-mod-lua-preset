@@ -1,9 +1,9 @@
 function vector_add(a,b)
- return {
-  a[1]+b[1],
-  a[2]+b[2],
-  a[3]+b[3]
- }
+ local output={}
+ for i=1,#a do
+  output[i]=a[i]+b[i]
+ end
+ return output
 end
 
 function vector_subtract(a,b)
