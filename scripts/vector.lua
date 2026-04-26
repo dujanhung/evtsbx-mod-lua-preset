@@ -13,6 +13,10 @@ end
 function vector_exp(a,n)
  return {a[1]^n,a[2]^n,a[3]^n}
 
+function vector_mixdown(a)
+ return a[1]+a[2]+a[3]
+end
+
 function vector_distance(a,b)
  local o=vector_exp(vector_subtract(a,b),2)
  return math.sqrt(o[1]+o[2]+o[3])
