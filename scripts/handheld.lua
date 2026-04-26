@@ -9,7 +9,9 @@ function handheld_tick()
    a,
    {0,1,0}
   ),
-  q.Inverse(tr.LocalRotation)
+  q.Inverse(
+   tr.LocalRotation
+  )
  )
  local f=
  rb.Rotation=b
@@ -24,7 +26,9 @@ function handheld_tick()
   q.MultiplyByVector(
    q.Multiply(
     b,
-    q.Inverse(rb.Rotation)
+    q.Inverse(
+     rb.Rotation
+    )
    ),
    vector_subtract(
     mb.Position,
