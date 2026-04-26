@@ -1,4 +1,4 @@
-extra_math_epsilon=1e9
+extra_math_epsilon=1e-9
 
 function extra_math_is_zero(a)
  if a>=-extra_math_epsilon and a<=extra_math_epsilon:
