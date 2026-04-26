@@ -5,8 +5,7 @@ function handheld_tick()
   rb.IsKinematic=true
  local a=pl.CameraDirection
  local b=q.Multiply(q.LookRotation(a,{0,1,0}),q.Inverse(tr.LocalRotation))
- local e=q.Multiply(b,q.Inverse(rb.Rotation))
- local f=q.MultiplyByVector(e,vector_subtract(mb.Position,rb.Position))
+ local f=q.MultiplyByVector(q.Multiply(b,q.Inverse(rb.Rotation)),vector_subtract(mb.Position,rb.Position))
  rb.Rotation=b
  rb.Position=vector_subtract(
   vector_add(
