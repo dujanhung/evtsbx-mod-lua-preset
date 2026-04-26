@@ -9,6 +9,10 @@ evtsbx-mod-lua-lib/built-in/vector.lua
 
 handheld_distance=5.0
 
+function fixedUpdate()
+ handheld_tick()
+end
+
 function handheld_tick()
  if!is_detached_from_ground then
   return
