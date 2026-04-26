@@ -4,6 +4,7 @@ required decencies:
 
 evtsbx-mod-lua-lib/built-in/shortcut.lua
 evtsbx-mod-lua-lib/built-in/vector.lua
+evtsbx-mod-lua-lib/third-party/is_detached_from_ground.lua
 
 */
 
