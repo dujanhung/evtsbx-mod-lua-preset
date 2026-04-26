@@ -9,8 +9,7 @@ function handheld_tick()
  local offsetVec=vector_subtract(mb.Position, rb.Position)
  local finalRotation=q.Multiply(targRot,q.Inverse(rb.Rotation))
  local newOffsetVec=q.MultiplyByVector(finalRotation,offsetVec)
- local offsetPos=SubtractVectors(targPos, 
-newOffsetVec)	
+ local offsetPos=SubtractVectors(targPos, newOffsetVec)	
  rb.Rotation=targRot
  rb.Position=offsetPos
 end
