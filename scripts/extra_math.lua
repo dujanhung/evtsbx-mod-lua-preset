@@ -18,7 +18,7 @@ function extra_math_sign_int(a)
 end
 
 function extra_math_sign_float(a)
- if a==0.0 then
+ if extra_math_is_zero_approx(a) then
   return 0.0
  end
  if a>0.0 then
