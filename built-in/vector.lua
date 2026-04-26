@@ -2,7 +2,7 @@ function vector_safeguard(a,b)
  if #a!=#b then
   return false
  end
- if type(a)!="table" then
+ if type(a)!="table" or type(a)!="table" then
   return false
  end
  return true
