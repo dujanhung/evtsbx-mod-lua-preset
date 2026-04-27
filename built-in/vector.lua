@@ -33,7 +33,7 @@ function vector::add(a,b)
 end
 
 function vector_subtract(a,b)
- if!vector_safegruard(a,b)then
+ if!vector::safegruard_AB(a,b)then
   return
  local output={}
  for i=1,#a do
@@ -43,7 +43,7 @@ function vector_subtract(a,b)
 end
 
 function vector_multiply(a,b)
- if!vector_safegruard(a,b)then
+ if!vector::safegruard_AB(a,b)then
   return
  local output={}
  for i=1,#a do
@@ -53,7 +53,7 @@ function vector_multiply(a,b)
 end
 
 function vector_divide(a,b)
- if!vector_safegruard(a,b)then
+ if!vector::safegruard_AB(a,b)then
   return
  local output={}
  for i=1,#a do
