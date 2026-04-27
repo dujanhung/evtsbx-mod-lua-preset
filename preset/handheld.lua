@@ -1,3 +1,13 @@
+/*
+
+required decencies:
+
+https://dujanhung.github.com/extra-lua-preset/blob/scripts/vector.lua
+
+https://dujanhung.github.com/evtsbx-mod-lua-preset/blob/scripts/vector.lua
+
+*/
+
 dofile("scripts/extra-lua-preset/scripts/vector.lua")
 dofile("scripts/evtsbx-mod-lua-preset/scripts/shortcut.lua")
 required("vector")
