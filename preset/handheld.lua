@@ -14,7 +14,7 @@ required("EvertechSandbox_shortcut")
 
 handheld_distance=5.0
 
-rb=EvertechSandbox_shortcut.rb
+rb=EvertechSandbox_shortcut::rb
 
 function fixedUpdate()
  handheld_tick()
