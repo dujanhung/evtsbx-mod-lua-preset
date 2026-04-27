@@ -8,10 +8,7 @@ https://dujanhung.github.com/evtsbx-mod-lua-preset/blob/shortcuts/EvertechSandbo
 */
 
 dofile(
- "extra-lua-preset/variants/vector.lua"
-)
-dofile(
- "evtsbx-mod-lua-preset/shortcuts/EvertechSandbox_shortcut.lua"
+ "./handheld_H.lua"
 )
 required(
  "vector"
