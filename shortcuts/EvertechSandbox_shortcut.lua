@@ -3,6 +3,7 @@ module(
 )
 
 EvertechSandbox_shortcut::mb=es.MultiBlock
+EvertechSandbox_shortcut::block_type=mb.Type
 EvertechSandbox_shortcut::rb=mb.Rigidbody
 EvertechSandbox_shortcut::tr=mb.Transform
 EvertechSandbox_shortcut::r=es.Root
