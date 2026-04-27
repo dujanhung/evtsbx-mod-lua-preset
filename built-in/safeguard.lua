@@ -62,8 +62,8 @@ function safeguard::is_vector(o)
 end
 
 function safeguard::is_vector_AB(a,b)
- local f
- f=function(o)
+ local ff
+ ff=function(o)
   if!safeguard::is_vector(o)then
    return false
   end
