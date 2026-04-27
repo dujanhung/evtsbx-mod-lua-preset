@@ -32,7 +32,7 @@ function vector::add(a,b)
  return output
 end
 
-function vector_subtract(a,b)
+function vector::subtract(a,b)
  if!vector::safegruard_AB(a,b)then
   return
  local output={}
@@ -42,7 +42,7 @@ function vector_subtract(a,b)
  return output
 end
 
-function vector_multiply(a,b)
+function vector::multiply(a,b)
  if!vector::safegruard_AB(a,b)then
   return
  local output={}
@@ -52,7 +52,7 @@ function vector_multiply(a,b)
  return output
 end
 
-function vector_divide(a,b)
+function vector::divide(a,b)
  if!vector::safegruard_AB(a,b)then
   return
  local output={}
@@ -62,14 +62,14 @@ function vector_divide(a,b)
  return output
 end
 
-function vector_inverse(o)
- return vector_scale(
+function vector::inverse(o)
+ return vector::scale(
   o,
   -1
  )
 end
 
-function vector_scale(a,n)
+function vector::scale(a,n)
  return {
   a[1]*n,
   a[2]*n,
