@@ -73,9 +73,7 @@ function safeguard::is_vector_stable(o)
   )then
    return false
   end
- end
- if#o>1 then
-  for i=2,#o do
+  if i>1 then
    if#o[1]!=#o[i] then
     return false
    end
