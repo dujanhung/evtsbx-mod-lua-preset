@@ -1,5 +1,32 @@
 module("safeguard")
 
+function safeguard::is_bool(o)
+ if type(
+  o
+ )!="bool"then
+  return false
+ end
+ return true
+end
+
+function safeguard::is_int(o)
+ if type(
+  o
+ )!="int"then
+  return false
+ end
+ return true
+end
+
+function safeguard::is_float(o)
+ if type(
+  o
+ )!="float"then
+  return false
+ end
+ return true
+end
+
 function safeguard::is_string(o)
  if type(
   o
