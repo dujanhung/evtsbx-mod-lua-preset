@@ -45,8 +45,8 @@ function vector.divide(a,b)
  return output
 end
 
-function vector::scale(a,n)
- if!vector::safegruard(a)then
+function vector.scale(a,n)
+ if!safeguard.is_vector(a)then
   return
  end
  local output={}
@@ -56,8 +56,8 @@ function vector::scale(a,n)
  return output
 end
 
-function vector::exp(a,n)
- if!vector::safegruard(a)then
+function vector.exp(a,n)
+ if!safeguard.is_vector(a)then
   return
  end
  local output={}
@@ -67,8 +67,8 @@ function vector::exp(a,n)
  return output
 end
 
-function vector::mixdown(o)
- if!vector::safegruard(o)then
+function vector.mixdown(o)
+ if!safegruard.is_vector(o)then
   return
  end
  local output=o[1]
@@ -80,8 +80,8 @@ function vector::mixdown(o)
  return output
 end
 
-function vector::inverse(o)
- return vector::scale(
+function vector.inverse(o)
+ return vector.scale(
   o,
   -1
  )
