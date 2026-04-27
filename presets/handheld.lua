@@ -30,10 +30,10 @@ function handheld_tick()
   )
  )
  rb.Rotation=b
- rb.Position=vector::subtract(
-  vector::add(
+ rb.Position=vector.subtract(
+  vector.add(
    pl.CameraPosition,
-   vector::scale(
+   vector.scale(
     a,
     handheld_distance
    )
@@ -45,7 +45,7 @@ function handheld_tick()
      rb.Rotation
     )
    ),
-   vector::subtract(
+   vector.subtract(
     mb.Position,
     rb.Position
    )
