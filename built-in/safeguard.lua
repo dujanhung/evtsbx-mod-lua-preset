@@ -61,22 +61,25 @@ function safeguard::is_vector(o)
  return true
 end
 
-function safeguard::is_vector_AB(a,b)
- local ff
- ff=function(o)
-  if!safeguard::is_vector(o)then
+function safeguard::is_vector_stable(o)
+ if!safeguard::is_table(
+  o
+ )then
+  return false
+ end
+ for i=1,#o do
+  if!safeguard::is_vector(
+   o[i]
+  )then
    return false
   end
-  return true
  end
- if!safeguard::is_vector(a)then
-  return false
- end
- if!safeguard::is_vector(b)then
-  return false
- end
- if #a!=#b then
-  return false
- end
+ local ff=o[1]
+ if #ff>1 then
+  for i=2,#ff do
+   if #ff!=#o[i] then
+    return false
+   end
+  end
  return true
 end
