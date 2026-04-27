@@ -1,4 +1,6 @@
-module("safeguard")
+module(
+ "safeguard"
+)
 
 function safeguard.is_boolean(o)
  if type(
