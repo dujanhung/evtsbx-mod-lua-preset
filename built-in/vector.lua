@@ -2,7 +2,12 @@ required("safeguard")
 module("vector")
 
 function vector.add(a,b)
- if!safeguard.is_vector_AB(a,b)then
+ if!safeguard.is_vector_stable(
+  {
+   a,
+   b
+  }
+ )then
   return
  end
  local output={}
@@ -13,7 +18,12 @@ function vector.add(a,b)
 end
 
 function vector.subtract(a,b)
- if!safeguard.is_vector_AB(a,b)then
+ if!safeguard.is_vector_stable(
+  {
+   a,
+   b
+  }
+ )then
   return
  end
  local output={}
@@ -24,7 +34,12 @@ function vector.subtract(a,b)
 end
 
 function vector.multiply(a,b)
- if!safeguard.is_vector_AB(a,b)then
+ if!safeguard.is_vector_stable(
+  {
+   a,
+   b
+  }
+ )then
   return
  end
  local output={}
@@ -35,7 +50,12 @@ function vector.multiply(a,b)
 end
 
 function vector.divide(a,b)
- if!safeguard.is_vector_AB(a,b)then
+ if!safeguard.is_vector_stable(
+  {
+   a,
+   b
+  }
+ )then
   return
  end
  local output={}
