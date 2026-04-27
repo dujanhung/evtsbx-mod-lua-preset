@@ -6,8 +6,11 @@ function vector::safeguard(o)
   return false
  end
  for i=1,#o do
-  local w=type(a[i])
-  if w!="int"and w!="float"then
+  if!extra_math::is_int_or_float(
+   type(
+    a[i]
+   )
+  )then
    return false
   end
  end
