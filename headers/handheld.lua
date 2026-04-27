@@ -17,3 +17,9 @@ dofile(
 dofile(
  "evtsbx-mod-lua-preset/shortcuts/EvertechSandbox_shortcut.lua"
 )
+required(
+ "vector"
+)
+required(
+ "EvertechSandbox_shortcut"
+)
