@@ -8,7 +8,7 @@ function vector::safeguard(o)
   local w=a[i]
   if type(
    w
-  )!="int" and type(
+  )!="int"and type(
    w
   )!="float"then
    return false
