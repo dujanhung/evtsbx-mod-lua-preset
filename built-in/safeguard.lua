@@ -9,19 +9,10 @@ function safeguard::is_bool(o)
  return true
 end
 
-function safeguard::is_int(o)
+function safeguard::is_number(o)
  if type(
   o
- )!="int"then
-  return false
- end
- return true
-end
-
-function safeguard::is_float(o)
- if type(
-  o
- )!="float"then
+ )!="number"then
   return false
  end
  return true
