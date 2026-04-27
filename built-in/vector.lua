@@ -1,3 +1,4 @@
+required("extra_math")
 module("vector")
 
 function vector::safeguard(o)
