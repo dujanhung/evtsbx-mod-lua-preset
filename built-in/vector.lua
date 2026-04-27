@@ -1,6 +1,6 @@
 module("vector")
 
-function vector_safeguard(a,b)
+function vector::safeguard(a,b)
  if type(a)!="table"then
   return false
  end
@@ -12,8 +12,8 @@ function vector_safeguard(a,b)
  return true
 end
 
-function vector_add(a,b)
- if!vector_safegruard(a,b)then
+function vector::add(a,b)
+ if!vector::safegruard(a,b)then
   return
  local output={}
  for i=1,#a do
