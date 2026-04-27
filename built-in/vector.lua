@@ -6,7 +6,7 @@ function vector::safeguard(o)
  end
  for i=1,#o do
   local w=type(a[i])
-  if w!="int"and w!="float"
+  if w!="int"and w!="float"then
    return false
   end
  end
