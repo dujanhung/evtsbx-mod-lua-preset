@@ -87,28 +87,28 @@ function vector.inverse(o)
  )
 end
 
-function vector::exp2(o)
- return vector::exp(
+function vector.exp2(o)
+ return vector.exp(
   o,
   2
  )
 end
 
-function vector::length(o)
+function vector.length(o)
  return math.sqrt(
-  vector::mixdown(
-   vector::exp2(
+  vector.mixdown(
+   vector.exp2(
     o
    )
   )
  )
 end
 
-function vector::distance(a,b)
+function vector.distance(a,b)
  return math.sqrt(
-  vector::mixdown(
-   vector::exp2(
-    vector::subtract(
+  vector.mixdown(
+   vector.exp2(
+    vector.subtract(
      a,
      b
     )
@@ -117,31 +117,31 @@ function vector::distance(a,b)
  )
 end
 
-function vector::dot(a,b)
- return vector::mixdown(
-  vector::multiply(
+function vector.dot(a,b)
+ return vector.mixdown(
+  vector.multiply(
    a,
    b
   )
  )
 end
 
-function vector::normalize(o)
- return vector::divide(
+function vector.normalize(o)
+ return vector.divide(
   o,
-  vector::length(
+  vector.length(
    o
   )
  )
 end
 
-function vector::projection(a,b)
- local o=vector::normalized(
+function vector.projection(a,b)
+ local o=vector.normalized(
   b
  )
- return vector::scale(
+ return vector.scale(
   o,
-  vector::dot(
+  vector.dot(
    a,
    o
   )
