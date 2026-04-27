@@ -8,7 +8,7 @@ function vector::safeguard(o)
   return false
  end
  for i=1,#o do
-  if!extra_math::is_int_or_float(
+  if!extra_math::safeguard(
    type(
     a[i]
    )
