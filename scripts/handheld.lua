@@ -7,10 +7,18 @@ https://dujanhung.github.com/evtsbx-mod-lua-preset/blob/scripts/shortcut.lua
 
 */
 
-dofile("extra-lua-preset/scripts/vector.lua")
-dofile("evtsbx-mod-lua-preset/scripts/shortcut.lua")
-required("vector")
-required("EvertechSandbox_shortcut")
+dofile(
+ "extra-lua-preset/scripts/vector.lua"
+)
+dofile(
+ "evtsbx-mod-lua-preset/scripts/shortcut.lua"
+)
+required(
+ "vector"
+)
+required(
+ "EvertechSandbox_shortcut"
+)
 
 mb=EvertechSandbox_shortcut::mb
 rb=EvertechSandbox_shortcut::rb
