@@ -1,6 +1,6 @@
 module("safeguard")
 
-function safeguard::is_boolean(o)
+function safeguard.is_boolean(o)
  if type(
   o
  )!="boolean"then
@@ -9,7 +9,7 @@ function safeguard::is_boolean(o)
  return true
 end
 
-function safeguard::is_number(o)
+function safeguard.is_number(o)
  if type(
   o
  )!="number"then
@@ -18,7 +18,7 @@ function safeguard::is_number(o)
  return true
 end
 
-function safeguard::is_string(o)
+function safeguard.is_string(o)
  if type(
   o
  )!="string"then
@@ -27,7 +27,7 @@ function safeguard::is_string(o)
  return true
 end
 
-function safeguard::is_table(o)
+function safeguard.is_table(o)
  if type(
   o
  )!="table"then
@@ -36,7 +36,7 @@ function safeguard::is_table(o)
  return true
 end
 
-function safeguard::is_function(o)
+function safeguard.is_function(o)
  if type(
   o
  )!="function"then
@@ -45,14 +45,14 @@ function safeguard::is_function(o)
  return true
 end
 
-function safeguard::is_vector(o)
- if!safeguard::is_table(
+function safeguard.is_vector(o)
+ if!safeguard.is_table(
   o
  )then
   return false
  end
  for i=1,#o do
-  if!safeguard::is_number(
+  if!safeguard.is_number(
    a[i]
   )then
    return false
@@ -61,14 +61,14 @@ function safeguard::is_vector(o)
  return true
 end
 
-function safeguard::is_vector_stable(o)
- if!safeguard::is_table(
+function safeguard.is_vector_stable(o)
+ if!safeguard.is_table(
   o
  )then
   return false
  end
  for i=1,#o do
-  if!safeguard::is_vector(
+  if!safeguard.is_vector(
    o[i]
   )then
    return false
