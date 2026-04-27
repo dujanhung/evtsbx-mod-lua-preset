@@ -10,8 +10,6 @@ dofile(
  "evtsbx-mod-lua-preset/headers/handheld.lua"
 )
 
-handheld_distance=5.0
-
 function fixedUpdate()
  handheld_tick()
 end
