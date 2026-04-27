@@ -9,9 +9,7 @@ function vector::safeguard(o)
  end
  for i=1,#o do
   if!extra_math::safeguard(
-   type(
-    a[i]
-   )
+   a[i]
   )then
    return false
   end
