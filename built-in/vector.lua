@@ -106,7 +106,7 @@ function vector::exp2(o)
  )
 end
 
-function vector_mixdown(o)
+function vector::mixdown(o)
  if!vector::safegruard(o)then
   return
  end
@@ -119,21 +119,21 @@ function vector_mixdown(o)
  return output
 end
 
-function vector_length(o)
+function vector::length(o)
  return math.sqrt(
-  vector_mixdown(
-   vector_exp2(
+  vector::mixdown(
+   vector::exp2(
     o
    )
   )
  )
 end
 
-function vector_distance(a,b)
+function vector::distance(a,b)
  return math.sqrt(
-  vector_mixdown(
-   vector_exp2(
-    vector_subtract(
+  vector::mixdown(
+   vector::exp2(
+    vector::subtract(
      a,
      b
     )
@@ -142,31 +142,31 @@ function vector_distance(a,b)
  )
 end
 
-function vector_dot(a,b)
- return vector_mixdown(
-  vector_multiply(
+function vector::dot(a,b)
+ return vector::mixdown(
+  vector::multiply(
    a,
    b
   )
  )
 end
 
-function vector_normalize(o)
- return vector_divide(
+function vector::normalize(o)
+ return vector::divide(
   o,
-  vector_length(
+  vector::length(
    o
   )
  )
 end
 
-function vector_projection(a,b)
- local o=vector_normalized(
+function vector::projection(a,b)
+ local o=vector::normalized(
   b
  )
- return vector_scale(
+ return vector::scale(
   o,
-  vector_dot(
+  vector::dot(
    a,
    o
   )
