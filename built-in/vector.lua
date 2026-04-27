@@ -12,23 +12,12 @@ function vector::safeguard(o)
 end
 
 function vector::safeguard_AB(a,b)
- if type(a)!="table"then
+ if!vector::safeguard(a)then
   return false
- end
- if type(b)!="table"then
+ if!vector::safeguard(b)then
   return false
  if #a!=#b then
   return false
- end
- for i=1,#a do
-  local o=type(a[i])
-  if o!="int"and o!="float"
-   return false
-  end
-  o=type(b[i])
-  if o!="int"and o!="float"
-   return false
-  end
  end
  return true
 end
