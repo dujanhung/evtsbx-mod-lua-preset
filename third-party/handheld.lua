@@ -8,7 +8,7 @@ https://dujanhung.github.com/evtsbx-mod-lua-lib/blob/built-in/vector.lua
 */
 
 required("vector")
-required("ES_shortcut")
+required("EvertechSandbox_shortcut")
 
 handheld_distance=5.0
 
