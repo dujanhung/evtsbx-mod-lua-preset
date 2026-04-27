@@ -9,12 +9,6 @@ https://dujanhung.github.com/evtsbx-mod-lua-preset/blob/headers/handheld.lua"
 dofile(
  "evtsbx-mod-lua-preset/headers/handheld.lua"
 )
-required(
- "vector"
-)
-required(
- "EvertechSandbox_shortcut"
-)
 
 mb=EvertechSandbox_shortcut::mb
 rb=EvertechSandbox_shortcut::rb
