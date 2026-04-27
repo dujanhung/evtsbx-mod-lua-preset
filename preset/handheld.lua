@@ -1,12 +1,5 @@
-/*
-
-required decencies:
-
-https://dujanhung.github.com/evtsbx-mod-lua-lib/blob/built-in/shortcut.lua
-https://dujanhung.github.com/evtsbx-mod-lua-lib/blob/built-in/vector.lua
-
-*/
-
+dofile("scripts/evtsbx-mod-lua-preset/extra-lua-preset/scripts/vector.lua")
+dofile("scripts/evtsbx-mod-lua-preset/scripts/shortcut.lua")
 required("vector")
 required("EvertechSandbox_shortcut")
 
