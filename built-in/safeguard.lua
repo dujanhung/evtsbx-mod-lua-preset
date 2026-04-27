@@ -1,9 +1,9 @@
 module("safeguard")
 
-function safeguard::is_bool(o)
+function safeguard::is_boolean(o)
  if type(
   o
- )!="bool"then
+ )!="boolean"then
   return false
  end
  return true
