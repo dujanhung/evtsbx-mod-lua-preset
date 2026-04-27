@@ -3,7 +3,7 @@ module("safeguard")
 function safeguard::is_string(o)
  if type(
   o
- )!="str"then
+ )!="string"then
   return false
  end
  return true
