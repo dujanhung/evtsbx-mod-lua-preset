@@ -1,5 +1,14 @@
 module("safeguard")
 
+function safeguard::is_string(o)
+ if type(
+  o
+ )!="str"then
+  return false
+ end
+ return true
+end
+
 function safeguard::is_vector(o)
  if type(
   o
