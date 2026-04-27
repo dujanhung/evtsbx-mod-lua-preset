@@ -23,7 +23,7 @@ function vector::safeguard(a,b)
 end
 
 function vector::add(a,b)
- if!vector::safegruard(a,b)then
+ if!vector.safegruard(a,b)then
   return
  local output={}
  for i=1,#a do
