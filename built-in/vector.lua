@@ -2,7 +2,9 @@ required("extra_math")
 module("vector")
 
 function vector::safeguard(o)
- if type(o)!="table"then
+ if type(
+  o
+ )!="table"then
   return false
  end
  for i=1,#o do
