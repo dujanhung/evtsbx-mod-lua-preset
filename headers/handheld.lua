@@ -17,12 +17,14 @@ dofile(
 dofile(
  "evtsbx-mod-lua-preset/shortcuts/EvertechSandbox_shortcut.lua"
 )
+
 required(
  "vector"
 )
 required(
  "EvertechSandbox_shortcut"
 )
+
 mb=EvertechSandbox_shortcut::mb
 rb=EvertechSandbox_shortcut::rb
 tr=EvertechSandbox_shortcut::tr
