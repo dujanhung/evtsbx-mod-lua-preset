@@ -13,7 +13,7 @@ function extra_math.is_approx(value,target,artifact)
 end
 
 function extra_math.is_zero_approx(value)
- if extra_math.is_approx(value,0,extra_math_epsilon) then
+ if extra_math.is_approx(value,0,extra_math.epsilon) then
   return true
  end
  return false
