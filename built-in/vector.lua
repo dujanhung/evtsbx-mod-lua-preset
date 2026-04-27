@@ -1,7 +1,7 @@
 required("safeguard")
 module("vector")
 
-function vector::add(a,b)
+function vector.add(a,b)
  if!safeguard.is_vector_AB(a,b)then
   return
  end
