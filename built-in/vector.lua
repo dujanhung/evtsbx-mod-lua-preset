@@ -104,6 +104,7 @@ function vector_mixdown(o)
   for i=2,#a do
    o[1]=o[1]+o[i]
   end
+ end
  return output
 end
 
