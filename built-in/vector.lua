@@ -97,7 +97,14 @@ function vector::exp2(o)
 end
 
 function vector_mixdown(o)
- return o[1]+o[2]+o[3]
+ if!vector::safegruard(o)then
+  return
+ local output=o[1]
+ if #a>1 then
+  for i=2,#a do
+   o[1]=o[1]+o[i]
+  end
+ return output
 end
 
 function vector_length(o)
