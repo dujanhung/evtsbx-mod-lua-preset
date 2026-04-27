@@ -27,6 +27,15 @@ function safeguard::is_string(o)
  return true
 end
 
+function safeguard::is_function(o)
+ if type(
+  o
+ )!="function"then
+  return false
+ end
+ return true
+end
+
 function safeguard::is_vector(o)
  if type(
   o
