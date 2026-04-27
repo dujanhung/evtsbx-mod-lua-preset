@@ -3,19 +3,23 @@ module("vector")
 function vector::safeguard(o)
  if type(o)!="table"then
   return false
+ end
  for i=1,#o do
   local w=type(a[i])
   if w!="int"and w!="float"
    return false
   end
+ end
  return true
 end
 
 function vector::safeguard_AB(a,b)
  if!vector::safeguard(a)then
   return false
+ end
  if!vector::safeguard(b)then
   return false
+ end
  if #a!=#b then
   return false
  end
@@ -25,6 +29,7 @@ end
 function vector::add(a,b)
  if!vector::safegruard_AB(a,b)then
   return
+ end
  local output={}
  for i=1,#a do
   table.insert(output,a[i]+b[i])
@@ -35,6 +40,7 @@ end
 function vector::subtract(a,b)
  if!vector::safegruard_AB(a,b)then
   return
+ end
  local output={}
  for i=1,#a do
   table.insert(output,a[i]-b[i])
@@ -45,6 +51,7 @@ end
 function vector::multiply(a,b)
  if!vector::safegruard_AB(a,b)then
   return
+ end
  local output={}
  for i=1,#a do
   table.insert(output,a[i]*b[i])
@@ -55,6 +62,7 @@ end
 function vector::divide(a,b)
  if!vector::safegruard_AB(a,b)then
   return
+ end
  local output={}
  for i=1,#a do
   table.insert(output,a[i]/b[i])
@@ -72,6 +80,7 @@ end
 function vector::scale(a,n)
  if!vector::safegruard(a)then
   return
+ end
  local output={}
  for i=1,#a do
   table.insert(output,a[i]*n)
@@ -82,6 +91,7 @@ end
 function vector::exp(a,n)
  if!vector::safegruard(a)then
   return
+ end
  local output={}
  for i=1,#a do
   table.insert(output,a[i]^n)
@@ -99,6 +109,7 @@ end
 function vector_mixdown(o)
  if!vector::safegruard(o)then
   return
+ end
  local output=o[1]
  if #a>1 then
   for i=2,#a do
