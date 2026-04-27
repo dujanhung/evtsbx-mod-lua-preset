@@ -1,6 +1,6 @@
 module("safeguard")
 
-function safeguard::vector(o)
+function safeguard::is_vector(o)
  if type(
   o
  )!="table"then
@@ -19,11 +19,11 @@ function safeguard::vector(o)
  return true
 end
 
-function safeguard::vector_AB(a,b)
- if!safeguard::vector(a)then
+function safeguard::is_vector_AB(a,b)
+ if!safeguard::is_vector(a)then
   return false
  end
- if!safeguard::vector(b)then
+ if!safeguard::is_vector(b)then
   return false
  end
  if #a!=#b then
