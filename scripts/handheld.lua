@@ -41,7 +41,7 @@ function handheld_tick()
  local b=q.Multiply(
   q.LookRotation(
    a,
-   {0,1,0}
+   {0.0,1.0,0.0}
   ),
   q.Inverse(
    tr.LocalRotation
