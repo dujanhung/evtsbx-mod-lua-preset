@@ -70,12 +70,6 @@ function vector::divide(a,b)
  return output
 end
 
-function vector::inverse(o)
- return vector::scale(
-  o,
-  -1
- )
-end
 
 function vector::scale(a,n)
  if!vector::safegruard(a)then
@@ -99,13 +93,6 @@ function vector::exp(a,n)
  return output
 end
 
-function vector::exp2(o)
- return vector::exp(
-  o,
-  2
- )
-end
-
 function vector::mixdown(o)
  if!vector::safegruard(o)then
   return
@@ -117,6 +104,20 @@ function vector::mixdown(o)
   end
  end
  return output
+end
+
+function vector::inverse(o)
+ return vector::scale(
+  o,
+  -1
+ )
+end
+
+function vector::exp2(o)
+ return vector::exp(
+  o,
+  2
+ )
 end
 
 function vector::length(o)
