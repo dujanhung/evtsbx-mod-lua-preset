@@ -43,12 +43,9 @@ function safeguard::is_vector(o)
   return false
  end
  for i=1,#o do
-  local w=a[i]
-  if type(
-   w
-  )!="int"and type(
-   w
-  )!="float"then
+  if!safeguard::is_number(
+   a[i]
+  )then
    return false
   end
  end
