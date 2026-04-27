@@ -1,15 +1,3 @@
-/*
-
-required decencies:
-
-https://dujanhung.github.com/evtsbx-mod-lua-preset/blob/headers/handheld.lua"
-
-*/
-
-dofile(
- "evtsbx-mod-lua-preset/headers/handheld.lua"
-)
-
 function fixedUpdate()
  handheld_tick()
 end
