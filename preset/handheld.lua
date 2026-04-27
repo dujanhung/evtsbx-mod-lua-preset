@@ -1,5 +1,5 @@
-dofile("scripts/evtsbx-mod-lua-preset/extra-lua-preset/scripts/vector.lua")
-dofile("scripts/evtsbx-mod-lua-preset/scripts/shortcut.lua")
+dofile("../extra-lua-preset/scripts/vector.lua")
+dofile("../scripts/shortcut.lua")
 required("vector")
 required("EvertechSandbox_shortcut")
 
