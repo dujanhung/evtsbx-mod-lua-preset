@@ -1,4 +1,7 @@
 dofile(
+ "extra-lua-preset/safeguards/extra_math_safeguard.lua"
+)
+dofile(
  "extra-lua-preset/variants/vector.lua"
 )
 dofile(
