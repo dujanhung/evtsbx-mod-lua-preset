@@ -28,10 +28,14 @@ function extra_math.is_zero_approx(value)
 end
 
 function extra_math.sign(value)
- if value==0 then
+ if(
+  value==0
+ )then
   return 0
  end
- if value>0 then
+ if(
+  value>0
+ )then
   return 1
  end
  return -1
