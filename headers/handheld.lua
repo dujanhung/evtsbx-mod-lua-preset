@@ -14,6 +14,9 @@ dofile(
 dofile(
  "evtsbx-mod-lua-preset/shortcuts/EvertechSandbox_shortcut.lua"
 )
+dofile(
+ "evtsbx-mod-lua-preset/configs/handheld.lua"
+)
 
 required(
  "vector"
