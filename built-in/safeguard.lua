@@ -27,6 +27,15 @@ function safeguard::is_string(o)
  return true
 end
 
+function safeguard::is_table(o)
+ if type(
+  o
+ )!="table"then
+  return false
+ end
+ return true
+end
+
 function safeguard::is_function(o)
  if type(
   o
