@@ -9,6 +9,16 @@ function vector::safeguard(a,b)
  if #a!=#b then
   return false
  end
+ for i=1,#a do
+  local o=type(a[i])
+  if o!="int"and o!="float"
+   return false
+  end
+  o=type(b[i])
+  if o!="int"and o!="float"
+   return false
+  end
+ end
  return true
 end
 
