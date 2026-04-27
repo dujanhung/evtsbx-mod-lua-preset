@@ -1,8 +1,8 @@
 required("safeguard")
 module("vector")
 
-function vector::add(a,b)
- if!vector::safegruard_AB(a,b)then
+function vector.add(a,b)
+ if!safeguard.is_vector_AB(a,b)then
   return
  end
  local output={}
@@ -12,8 +12,8 @@ function vector::add(a,b)
  return output
 end
 
-function vector::subtract(a,b)
- if!vector::safegruard_AB(a,b)then
+function vector.subtract(a,b)
+ if!safeguard.is_vector_AB(a,b)then
   return
  end
  local output={}
@@ -23,8 +23,8 @@ function vector::subtract(a,b)
  return output
 end
 
-function vector::multiply(a,b)
- if!vector::safegruard_AB(a,b)then
+function vector.multiply(a,b)
+ if!safeguard.is_vector_AB(a,b)then
   return
  end
  local output={}
@@ -34,8 +34,8 @@ function vector::multiply(a,b)
  return output
 end
 
-function vector::divide(a,b)
- if!vector::safegruard_AB(a,b)then
+function vector.divide(a,b)
+ if!safeguard.is_vector_AB(a,b)then
   return
  end
  local output={}
