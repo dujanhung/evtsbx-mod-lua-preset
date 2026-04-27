@@ -20,10 +20,10 @@ function safeguard::vector(o)
 end
 
 function safeguard::vector_AB(a,b)
- if!vector::safeguard(a)then
+ if!safeguard::vector(a)then
   return false
  end
- if!vector::safeguard(b)then
+ if!safeguard::vector(b)then
   return false
  end
  if #a!=#b then
