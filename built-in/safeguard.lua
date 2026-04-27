@@ -46,9 +46,9 @@ function safeguard::is_function(o)
 end
 
 function safeguard::is_vector(o)
- if type(
+ if!safeguard::is_table(
   o
- )!="table"then
+ )then
   return false
  end
  for i=1,#o do
