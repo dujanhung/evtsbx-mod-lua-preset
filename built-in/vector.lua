@@ -70,7 +70,6 @@ function vector::divide(a,b)
  return output
 end
 
-
 function vector::scale(a,n)
  if!vector::safegruard(a)then
   return
