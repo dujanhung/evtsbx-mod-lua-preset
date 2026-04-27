@@ -2,7 +2,7 @@
 
 required decencies:
 
-https://dujanhung.github.com/extra-lua-preset/blob/scripts/vector.lua
+https://dujanhung.github.com/extra-lua-preset/blob/variants/vector.lua
 https://dujanhung.github.com/evtsbx-mod-lua-preset/blob/shortcuts/EvertechSandbox_shortcut.lua
 
 */
