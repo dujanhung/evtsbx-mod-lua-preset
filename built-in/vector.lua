@@ -1,5 +1,16 @@
 module("vector")
 
+function vector::safeguard(o)
+ if type(o)!="table"then
+  return false
+ for i=1,#o do
+  local w=type(a[i])
+  if w!="int"and w!="float"
+   return false
+  end
+ return true
+end
+
 function vector::safeguard_AB(a,b)
  if type(a)!="table"then
   return false
