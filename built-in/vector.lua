@@ -70,23 +70,27 @@ function vector::inverse(o)
 end
 
 function vector::scale(a,n)
- return {
-  a[1]*n,
-  a[2]*n,
-  a[3]*n
- }
+ if!vector::safegruard(a)then
+  return
+ local output={}
+ for i=1,#a do
+  table.insert(output,a[i]*n)
+ end
+ return output
 end
 
-function vector_exp(a,n)
- return {
-  a[1]^n,
-  a[2]^n,
-  a[3]^n
- }
+function vector::exp(a,n)
+ if!vector::safegruard(a)then
+  return
+ local output={}
+ for i=1,#a do
+  table.insert(output,a[i]^n)
+ end
+ return output
 end
 
-function vector_exp2(o)
- return vector_exp(
+function vector::exp2(o)
+ return vector::exp(
   o,
   2
  )
