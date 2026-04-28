@@ -9,7 +9,7 @@ example:
 ROOT/addons/evtsbx-mod-lua-preset
 ```
 
-required decencies:
+required presets:
 
 - https://github.com/dujanhung/extra-lua-preset
 
