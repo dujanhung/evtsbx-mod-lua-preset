@@ -1,4 +1,5 @@
 required("es")
+module("EvertechSandbox_shortcut")
 mb=es.MultiBlock
 rb=mb.Rigidbody
 tr=mb.Transform
