@@ -6,4 +6,6 @@ mbt=mb.Type
 mbu=mb.ModBlock.Uuid
 r=es.Root
 pl=es.Player
+cd=pl.CameraDirection
+cp=pl.CameraPosition
 q=es.Quaternion
