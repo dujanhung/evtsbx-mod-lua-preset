@@ -1,5 +1,4 @@
 required("es")
-module("es_shortcut")
 mb=es.MultiBlock
 rb=mb.Rigidbody
 tr=mb.Transform
