@@ -1,5 +1,6 @@
 required("vector")
 required("EvertechSandbox_shortcut")
+module("EvertechSandbox_preset_handheld")
 
 mb=EvertechSandbox_shortcut.mb
 rb=EvertechSandbox_shortcut.rb
