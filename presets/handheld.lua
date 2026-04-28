@@ -29,7 +29,7 @@ function EvertechSandbox_preset_handheld.tick()
    pl.CameraPosition,
    vector.scale(
     a,
-    handheld_distance
+    EvertechSandbox_preset_handheld.distance
    )
   ),
   q.MultiplyByVector(
