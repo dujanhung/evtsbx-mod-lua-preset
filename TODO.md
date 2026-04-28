@@ -8,3 +8,7 @@ example:
 ```
 ROOT/addons/evtsbx-mod-lua-preset
 ```
+
+required decencies:
+
+- https://dujanhung.github.com/extra-lua-preset
