@@ -8,6 +8,7 @@ mbt=mb.Type
 mbu=mb.ModBlock.Uuid
 rbp=rb.Position
 rbr=rb.Rotation
+trlr=tr.LocalRotation
 r=es.Root
 pl=es.Player
 cd=pl.CameraDirection
