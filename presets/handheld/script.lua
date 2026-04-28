@@ -1,4 +1,4 @@
-required("vector")
+required("extra-lua-preset")
 required("EvertechSandbox_shortcut")
 module("EvertechSandbox_preset_handheld")
 EvertechSandbox_preset_handheld.distance=5.0
