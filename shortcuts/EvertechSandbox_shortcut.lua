@@ -3,7 +3,7 @@ module("es_shortcut")
 mb=es.MultiBlock
 rb=mb.Rigidbody
 tr=mb.Transform
-mod_block_type=mb.Type -- "SimpleModBlock" , "WheelModBlock" , "SizableWheelModBlock" .
+mod_block_type=mb.Type
 mod_block_uuid=mb.ModBlock.Uuid
 r=es.Root
 pl=es.Player
