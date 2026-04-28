@@ -1,1 +1,10 @@
-.
+required("es")
+module("es_shortcut")
+mb=es.MultiBlock
+rb=mb.Rigidbody
+tr=mb.Transform
+mbt=mb.Type
+mbu=mb.ModBlock.Uuid
+r=es.Root
+pl=es.Player
+q=es.Quaternion
