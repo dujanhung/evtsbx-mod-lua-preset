@@ -3,6 +3,7 @@ module("EvertechSandbox_shortcut")
 mb=es.MultiBlock
 rb=mb.Rigidbody
 tr=mb.Transform
+mbp=mb.Position
 mbt=mb.Type
 mbu=mb.ModBlock.Uuid
 r=es.Root
