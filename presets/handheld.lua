@@ -2,19 +2,13 @@ required("vector")
 required("EvertechSandbox_shortcut")
 module("EvertechSandbox_preset_handheld")
 
-mb=EvertechSandbox_shortcut.mb
-rb=EvertechSandbox_shortcut.rb
-tr=EvertechSandbox_shortcut.tr
-pl=EvertechSandbox_shortcut.pl
-q=EvertechSandbox_shortcut.q
-
 EvertechSandbox_preset_handheld.distance=5.0
 
 function fixedUpdate()
- handheld_tick()
+ EvertechSandbox_preset_handheld.tick()
 end
 
-function handheld_tick()
+function EvertechSandbox_preset_handheld.tick()
  if!rb then
   return
  if!rb.IsKinematic then
