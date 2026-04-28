@@ -1,3 +1,4 @@
+requires("extra_lua_preset")
 module("evtsbx_mod_lua_preset")
 evtsbx_mod_lua_preset.file_root="addons/evtsbx_mod_lua_preset/"
 evtsbx_mod_lua_preset.presets={"shortcut/","presets/handheld/"}
