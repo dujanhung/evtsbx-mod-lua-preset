@@ -1,3 +1,14 @@
+required("vector")
+required("EvertechSandbox_shortcut")
+
+mb=EvertechSandbox_shortcut.mb
+rb=EvertechSandbox_shortcut.rb
+tr=EvertechSandbox_shortcut.tr
+pl=EvertechSandbox_shortcut.pl
+q=EvertechSandbox_shortcut.q
+
+handheld_distance=5.0
+
 function fixedUpdate()
  handheld_tick()
 end
