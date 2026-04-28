@@ -8,7 +8,7 @@ tr=EvertechSandbox_shortcut.tr
 pl=EvertechSandbox_shortcut.pl
 q=EvertechSandbox_shortcut.q
 
-handheld_distance=5.0
+EvertechSandbox_preset_handheld.distance=5.0
 
 function fixedUpdate()
  handheld_tick()
