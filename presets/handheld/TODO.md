@@ -1,15 +1,23 @@
-# "Evertech Sandbox" handheld script
+# "Evertech Sandbox" handheld module
 
 moves this block to player's crosshair.
 
-### previews
+## syntax
+
+```lua
+handheld
+```
+
+access to `handheld` module.
+
+## previews
 
 ___
 ___
 
 # methods
 
-## <code>handheld.tick()</code>
+## <code>tick()</code>
 
 ```lua
 handheld.tick()
