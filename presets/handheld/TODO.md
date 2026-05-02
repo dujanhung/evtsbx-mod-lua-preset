@@ -1,6 +1,6 @@
 # "Evertech Sandbox" handheld script
 
-moves this block to crosshair.
+moves this block to player's crosshair.
 
 ### previews
 
