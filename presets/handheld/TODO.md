@@ -15,4 +15,4 @@ ___
 handheld.tick()
 ```
 
-update block's rigidbody transform.
+update block's transform.
