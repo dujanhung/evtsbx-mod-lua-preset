@@ -1,4 +1,4 @@
-requires("extra_lua_preset")
+requires("evtsbx_mod_lua_preset")
 local evtsbx_mod_lua_preset={}
 evtsbx_mod_lua_preset.file_root="addons/evtsbx_mod_lua_preset/"
 evtsbx_mod_lua_preset.presets={"shortcut/","presets/handheld/"}
