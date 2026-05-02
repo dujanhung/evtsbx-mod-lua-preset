@@ -1,9 +1,11 @@
-## "Evertech Sandbox" handheld script
+### "Evertech Sandbox" handheld script
 
 move blocks to crosshair.
 
-### usage
+## <code>handheld.tick()</code>
 
 ```lua
-required("handheld")
+handheld.tick()
 ```
+
+update block's rigidbody transform.
