@@ -18,7 +18,7 @@ handheld.tick()
 update block's transform.
 
 > [!IMPORTANT]
-> you should detach this block from the ground.
+> you should detach this block from the ground. otherwise, it won't work.
 
 ### example
 
