@@ -16,3 +16,11 @@ handheld.tick()
 ```
 
 update block's transform.
+
+### example
+
+```lua
+function fixedUpdate()
+ handheld.tick()
+end
+```
