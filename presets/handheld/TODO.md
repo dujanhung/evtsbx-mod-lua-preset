@@ -2,6 +2,8 @@
 
 moves this block to player's crosshair.
 
+___
+
 ## syntax
 
 ```lua
@@ -9,6 +11,8 @@ handheld
 ```
 
 access to `handheld` module.
+
+___
 
 ## previews
 
