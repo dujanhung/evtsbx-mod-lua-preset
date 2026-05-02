@@ -1,4 +1,3 @@
-required("es")
 local EvertechSandbox_shortcut={}
 mb=es.MultiBlock
 rb=mb.Rigidbody
