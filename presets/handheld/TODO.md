@@ -1,11 +1,11 @@
-### "Evertech Sandbox" handheld script
+# "Evertech Sandbox" handheld script
 
 moves this block to crosshair.
 
 ___
 ___
 
-### methods
+# methods
 
 ## <code>handheld.tick()</code>
 
