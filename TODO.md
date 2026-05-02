@@ -14,7 +14,7 @@ required presets:
 
 - https://github.com/dujanhung/extra-lua-preset
 
-make scripts executable via:
+load scripts via:
 
 ```lua
 dofile("addons/evtsbx-mod-lua-preset/orchestrator/ALL.lua")
