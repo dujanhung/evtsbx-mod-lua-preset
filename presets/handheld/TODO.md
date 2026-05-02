@@ -1,6 +1,11 @@
 ### "Evertech Sandbox" handheld script
 
-move this block to crosshair.
+moves this block to crosshair.
+
+___
+___
+
+### methods
 
 ## <code>handheld.tick()</code>
 
