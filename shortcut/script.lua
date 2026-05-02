@@ -1,5 +1,5 @@
 required("es")
-module("EvertechSandbox_shortcut")
+local EvertechSandbox_shortcut={}
 mb=es.MultiBlock
 rb=mb.Rigidbody
 tr=mb.Transform
@@ -14,3 +14,4 @@ pl=es.Player
 cd=pl.CameraDirection
 cp=pl.CameraPosition
 q=es.Quaternion
+return EvertechSandbox_shortcut
